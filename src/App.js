@@ -9,23 +9,23 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    height: '100vh',  // Hauteur de 100% de la vue
+    height: '100vh',  
     textAlign: 'center',
   },
   mapContainer: {
     width: '80%',
-    height: '60vh',  // Hauteur de 60% de la vue
+    height: '60vh',  
     marginTop: theme.spacing(4),
     borderRadius: theme.spacing(2),
     boxShadow: theme.shadows[5],
-    // Centrage horizontal
+
     marginLeft: 'auto',
     marginRight: 'auto',
   },
 }));
 
 const Map = () => {
-  // Change these values with your own Google Maps API key and location
+
   const googleMapApiKey = 'YOUR_API_KEY_HERE';
   const center = {
     lat: 37.7749,
@@ -50,7 +50,7 @@ const App = () => {
     <div className={classes.root}>
       <Container>
         <Typography variant="h4" gutterBottom>
-          Bienvenue sur notre page d'atterrissage
+          Bienvenue sur ce checkpoint
         </Typography>
         <div className={classes.mapContainer}>
           <Map />
